@@ -40,6 +40,7 @@
             this.supplierToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.txtTTien = new System.Windows.Forms.TextBox();
             this.dgvItem = new System.Windows.Forms.DataGridView();
+            this.button2 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvItem)).BeginInit();
             this.SuspendLayout();
@@ -53,10 +54,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(435, 350);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(55, 13);
+            this.label1.Size = new System.Drawing.Size(61, 15);
             this.label1.TabIndex = 10;
             this.label1.Text = "Tổng tiền:";
             // 
@@ -68,7 +70,8 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(477, 421);
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(438, 416);
             this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(122, 63);
@@ -121,10 +124,11 @@
             // 
             // txtTTien
             // 
-            this.txtTTien.Location = new System.Drawing.Point(493, 347);
+            this.txtTTien.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTTien.Location = new System.Drawing.Point(525, 349);
             this.txtTTien.Margin = new System.Windows.Forms.Padding(2);
             this.txtTTien.Name = "txtTTien";
-            this.txtTTien.Size = new System.Drawing.Size(152, 20);
+            this.txtTTien.Size = new System.Drawing.Size(152, 22);
             this.txtTTien.TabIndex = 11;
             // 
             // dgvItem
@@ -142,11 +146,23 @@
             this.dgvItem.Size = new System.Drawing.Size(316, 261);
             this.dgvItem.TabIndex = 8;
             // 
+            // button2
+            // 
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(582, 416);
+            this.button2.Margin = new System.Windows.Forms.Padding(2);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(122, 63);
+            this.button2.TabIndex = 12;
+            this.button2.Text = "Thanh Toán";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
             // frmCoffeeShop
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(733, 536);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.flpTable);
@@ -177,5 +193,6 @@
         private System.Windows.Forms.ToolStripMenuItem supplierToolStripMenuItem;
         private System.Windows.Forms.TextBox txtTTien;
         private System.Windows.Forms.DataGridView dgvItem;
+        private System.Windows.Forms.Button button2;
     }
 }

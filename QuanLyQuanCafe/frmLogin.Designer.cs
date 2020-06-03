@@ -87,6 +87,7 @@
             this.btLogin.Text = "Đăng nhập";
             this.btLogin.UseVisualStyleBackColor = true;
             this.btLogin.UseWaitCursor = true;
+            this.btLogin.Click += new System.EventHandler(this.btLogin_Click);
             // 
             // frmLogin
             // 
@@ -100,7 +101,8 @@
             this.Controls.Add(this.btLogin);
             this.Name = "frmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmLogin";
+            this.Text = "Đăng nhập";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmLogin_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();
 
