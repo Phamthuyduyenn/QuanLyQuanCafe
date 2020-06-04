@@ -33,7 +33,6 @@
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.button1 = new System.Windows.Forms.Button();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.flpTable = new System.Windows.Forms.FlowLayoutPanel();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.productToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -41,6 +40,7 @@
             this.txtTTien = new System.Windows.Forms.TextBox();
             this.dgvItem = new System.Windows.Forms.DataGridView();
             this.button2 = new System.Windows.Forms.Button();
+            this.flpTable = new System.Windows.Forms.FlowLayoutPanel();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvItem)).BeginInit();
             this.SuspendLayout();
@@ -55,7 +55,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(435, 350);
+            this.label1.Location = new System.Drawing.Point(618, 353);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(61, 15);
@@ -71,7 +71,7 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(438, 416);
+            this.button1.Location = new System.Drawing.Point(610, 416);
             this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(122, 63);
@@ -84,14 +84,6 @@
             this.Column2.DataPropertyName = "quantity";
             this.Column2.HeaderText = "Số Lượng";
             this.Column2.Name = "Column2";
-            // 
-            // flpTable
-            // 
-            this.flpTable.Location = new System.Drawing.Point(-49, 26);
-            this.flpTable.Margin = new System.Windows.Forms.Padding(2);
-            this.flpTable.Name = "flpTable";
-            this.flpTable.Size = new System.Drawing.Size(459, 509);
-            this.flpTable.TabIndex = 7;
             // 
             // Column1
             // 
@@ -108,7 +100,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(733, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(1020, 24);
             this.menuStrip1.TabIndex = 6;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -125,7 +117,7 @@
             // txtTTien
             // 
             this.txtTTien.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTTien.Location = new System.Drawing.Point(525, 349);
+            this.txtTTien.Location = new System.Drawing.Point(791, 350);
             this.txtTTien.Margin = new System.Windows.Forms.Padding(2);
             this.txtTTien.Name = "txtTTien";
             this.txtTTien.Size = new System.Drawing.Size(152, 22);
@@ -139,17 +131,17 @@
             this.Column2,
             this.Column3,
             this.Column4});
-            this.dgvItem.Location = new System.Drawing.Point(414, 26);
+            this.dgvItem.Location = new System.Drawing.Point(525, 26);
             this.dgvItem.Margin = new System.Windows.Forms.Padding(2);
             this.dgvItem.Name = "dgvItem";
             this.dgvItem.RowTemplate.Height = 24;
-            this.dgvItem.Size = new System.Drawing.Size(316, 261);
+            this.dgvItem.Size = new System.Drawing.Size(444, 262);
             this.dgvItem.TabIndex = 8;
             // 
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(582, 416);
+            this.button2.Location = new System.Drawing.Point(821, 416);
             this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(122, 63);
@@ -157,20 +149,29 @@
             this.button2.Text = "Thanh Toán";
             this.button2.UseVisualStyleBackColor = true;
             // 
+            // flpTable
+            // 
+            this.flpTable.Location = new System.Drawing.Point(12, 26);
+            this.flpTable.Margin = new System.Windows.Forms.Padding(2);
+            this.flpTable.Name = "flpTable";
+            this.flpTable.Size = new System.Drawing.Size(492, 518);
+            this.flpTable.TabIndex = 13;
+            // 
             // frmCoffeeShop
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(733, 536);
+            this.ClientSize = new System.Drawing.Size(1020, 536);
+            this.Controls.Add(this.flpTable);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.flpTable);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.txtTTien);
             this.Controls.Add(this.dgvItem);
             this.Name = "frmCoffeeShop";
             this.Text = "Phần mềm quản lý quán Cafe";
+            this.Load += new System.EventHandler(this.frmCoffeeShop_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvItem)).EndInit();
@@ -186,7 +187,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.FlowLayoutPanel flpTable;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem productToolStripMenuItem;
@@ -194,5 +194,6 @@
         private System.Windows.Forms.TextBox txtTTien;
         private System.Windows.Forms.DataGridView dgvItem;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.FlowLayoutPanel flpTable;
     }
 }

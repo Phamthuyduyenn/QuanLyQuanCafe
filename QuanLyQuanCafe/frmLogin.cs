@@ -13,12 +13,18 @@ namespace QuanLyQuanCafe
     public partial class frmLogin : Form
     {
         public frmLogin()
-        {            
+        {
             InitializeComponent();
         }
 
         private void btLogin_Click(object sender, EventArgs e)
         {
+            
+            //frmCoffeeShop f = new frmCoffeeShop();
+            //this.Hide();
+            //f.ShowDialog();
+            //this.Show();
+
             string user = txtUserName.Text;
             string pass = txtPassword.Text;
 
@@ -32,13 +38,7 @@ namespace QuanLyQuanCafe
             }
             else MessageBox.Show("Đăng nhập thất bại");
         }
-
-        //private void frmLogin_FormClosing(object sender, FormClosingEventArgs e)
-        //{
-        //    if (MessageBox.Show("Bạn có thực sự muốn thoát chương trình?", "Thông báo", MessageBoxButtons.OKCancel) != System.Windows.Forms.DialogResult.OK)
-        //    {
-        //        e.Cancel = true;
-        //    }
-        //}
     }
 }
+
+
