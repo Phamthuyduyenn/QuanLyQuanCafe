@@ -85,6 +85,20 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DAO\DAO.csproj">
+      <Project>{8A6748AE-F1A8-4829-B77A-87C7F08FBCED}</Project>
+      <Name>DAO</Name>
+    </ProjectReference>
+    <ProjectReference Include="BUS\BUS.csproj">
+      <Project>{DC7132F3-F9FE-4785-9C5E-5D437B22E0BD}</Project>
+      <Name>BUS</Name>
+    </ProjectReference>
+    <ProjectReference Include="DTO\DTO.csproj">
+      <Project>{269D4DD9-B34A-4E96-8037-39A4167CB5AC}</Project>
+      <Name>DTO</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
