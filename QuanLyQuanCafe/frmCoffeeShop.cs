@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using BUS;
+using System.Data.SqlClient;
 
 namespace QuanLyQuanCafe
 {
@@ -19,6 +20,16 @@ namespace QuanLyQuanCafe
         }
 
         TableBUS tabBUS = new TableBUS();
+        void LoadCombobox()
+        {
+            var cmd = new SqlCommand("select name from Product", cn);
+            //var dr = cmd.ExecuteReader();
+            var dt = new DataTable();
+            dt.Load(dr);
+            dr.Dispose();
+            cbShowFood.DataSource = dt;
+        }
+
         private void frmCoffeeShop_Load(object sender, EventArgs e)
         {
             this.Show();
@@ -30,7 +41,7 @@ namespace QuanLyQuanCafe
             if (result == DialogResult.OK)
                 this.Enabled = true;
             else Application.Exit();
-
+            LoadCombobox();
 
             DataTable tables = tabBUS.Get();
             foreach (DataRow table in tables.Rows)
@@ -52,6 +63,7 @@ namespace QuanLyQuanCafe
                         break;
                 }
                 flpTable.Controls.Add(btn);
+
             }
         }
 
@@ -78,5 +90,8 @@ namespace QuanLyQuanCafe
             else txtTTien.Text = total.ToString("0");
         }
 
+
+
+        public SqlConnection cn { get; set; }
     }
 }

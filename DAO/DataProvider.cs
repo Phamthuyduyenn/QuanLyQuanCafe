@@ -18,6 +18,7 @@ namespace DAO
             cn = new SqlConnection(cnStr);
         }
 
+
         public void Connect()
         {
             try
